@@ -35,10 +35,14 @@ function askTime() {
 
   function printGranny() {
 let print = prompt ('How many times would you like to print my granny? 1-20', '20')
-  
-for (let i = 0; i < print; i++) {
-    document.write("<img class ='gran' src='granpassportpic-2.jpg'/>")
-}
+
+  while (print < 0 || print >= 20) {
+  print = prompt('Please enter a number 20 or lower!')
   }
+  for (let i = 0; i < print; i++) {
+    document.write("<img class ='gran' src='granpassportpic-2.jpg'/>")
+} 
+}
+  
 
  
